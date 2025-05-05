@@ -18,9 +18,9 @@ jobs:
           go-version: '1.23'
       - name: Install dependencies
         run: |
-          sudo add-apt-repository ppa:okirby/qt6-backports
           sudo apt update
-          sudo apt install -y make mingw-w64 cmake libssl-dev qt6-base-dev qt6-websockets-dev
+          sudo apt install -y make mingw-w64 cmake libssl-dev qt6-base-dev libqt6websockets6-dev
+
       - name: Build server and extenders
         run: |
           make server
