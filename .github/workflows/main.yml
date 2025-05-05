@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y make mingw-w64 cmake libssl-dev qt6-base-dev libqt6websockets6-dev
+          sudo apt install -y make mingw-w64 cmake libssl-dev qt6-base-dev libqt6websockets6-dev libgl1-mesa-dev libglx-dev libglu1-mesa-dev freeglut3-dev
 
       - name: Build server and extenders
         run: |
