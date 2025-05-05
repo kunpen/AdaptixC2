@@ -23,9 +23,10 @@ jobs:
 
       - name: Build server and extenders
         run: |
+          make client
           make server
           make extenders
-          make client
+          
 
       - name: Create tarball
         run: |
